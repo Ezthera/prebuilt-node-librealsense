@@ -14,7 +14,7 @@
         "./src/addon.cpp",
       ],
       "include_dirs": [
-         "../../include",
+         "./include",
          "<!(node -e \"require('nan')\")",
       ],
       "cflags!": [
