@@ -1,5 +1,5 @@
 {
-  "name": "node-librealsense",
+  "name": "@sol-0/node-librealsense",
   "version": "0.2130.0",
   "description": "Node.js API for Intel® RealSense™ SDK 2.0",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IntelRealSense/librealsense.git"
+    "url": "git+https://github.com/sol-0/test-npm-publish.git"
   },
   "keywords": [
     "realsense",
