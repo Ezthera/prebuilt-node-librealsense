@@ -2,8 +2,7 @@
   'variables': {
     'configuration%': 'Release',
     'build_arch': '<!(node -p "process.arch")',
-    'vs_configuration%': "Debug",
-    'win_realsense_dir': '<(module_root_dir)/realsense2/',
+    'realsense_dir': '<(module_root_dir)/realsense2/',
   },
   "targets": [
     {
@@ -47,15 +46,15 @@
                 'SuppressStartupBanner': 'true',
               }
             },
-            "libraries": [ "<(win_realsense_dir)/win-x64/realsense2.lib" ],
+            "libraries": [ "<(realsense_dir)/win-x64/realsense2.lib" ],
           }
         ],
        ['OS=="mac"',
           {
             "libraries": [
-              '<(module_root_dir)/../../build/<(configuration)/librealsense2.dylib',
+              '<(realsense_dir)/librealsense2.dylib',
               # Write the below RPATH into the generated addon
-              '-Wl,-rpath,@loader_path/../../../../build/<(configuration)',
+              '-Wl,-rpath,@loader_path/mac',
             ],
             'xcode_settings': {
               'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
@@ -101,7 +100,7 @@
             [
               {
                 'destination': '<(module_root_dir)/build/Release',
-                'files': ['<(win_realsense_dir)/win-x64/realsense2.dll']
+                'files': ['<(realsense_dir)/win-x64/realsense2.dll']
             	}
             ]
         }]
