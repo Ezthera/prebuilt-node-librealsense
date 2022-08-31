@@ -52,7 +52,7 @@
        ['OS=="mac"',
           {
             "libraries": [
-              '<(realsense_dir)/librealsense2.dylib',
+              '<(realsense_dir)/mac/librealsense2.dylib',
               # Write the below RPATH into the generated addon
               '-Wl,-rpath,@loader_path/mac',
             ],
