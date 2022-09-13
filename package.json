@@ -4,11 +4,13 @@
   "description": "Node.js API for Intel® RealSense™ SDK 2.0",
   "main": "index.js",
   "directories": {
+    "doc": "doc",
+    "example": "examples",
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sol-0/test-npm-publish.git"
+    "url": "git+https://github.com/Ezthera/prebuilt-node-librealsense.git"
   },
   "keywords": [
     "realsense",
@@ -33,5 +35,11 @@
   "devDependencies": {
     "jsdoc": "^3.6.6",
     "marked": "~0.3.9"
-  }
+  },
+  "types": "./index.d.ts",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Ezthera/prebuilt-node-librealsense/issues"
+  },
+  "homepage": "https://github.com/Ezthera/prebuilt-node-librealsense#readme"
 }
