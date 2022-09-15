@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/Ezthera/prebuilt-node-librealsense/issues"
   },
-  "homepage": "https://github.com/Ezthera/prebuilt-node-librealsense#readme"
+  "homepage": "https://github.com/Ezthera/prebuilt-node-librealsense#readme",
+  "publishConfig": {
+    "@ezthera:registry": "https://npm.pkg.github.com"
+  }
 }
