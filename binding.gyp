@@ -67,11 +67,10 @@
         ['OS=="linux"',
           {
             "libraries": [
-              "-lrealsense2"
+              "-l:librealsense2.so.2.51"
             ],
             'ldflags': [
-              # rpath for build from source
-              '-Wl,-rpath,\$$ORIGIN/../../../../build',
+              '-Wl,-rpath,\$$ORIGIN/../../realsense2/linux',
               '-L<(realsense_dir)linux'
             ],
             "cflags+": [
