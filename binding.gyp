@@ -72,11 +72,8 @@
             'ldflags': [
               # rpath for build from source
               '-Wl,-rpath,\$$ORIGIN/../../../../build',
-              '-L<(module_root_dir)/../../build',
-              # rpatch for build debian package
-              '-Wl,-rpath,\$$ORIGIN/../../../../obj-x86_64-linux-gnu',
-              '-L<(module_root_dir)/../../obj-x86_64-linux-gnu'
-           ],
+              '-L<(realsense_dir)linux'
+            ],
             "cflags+": [
               "-std=c++11"
             ],
