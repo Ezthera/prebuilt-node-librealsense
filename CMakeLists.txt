@@ -48,6 +48,8 @@ if (MSVC)
     add_definitions(-DWIN32_LEAN_AND_MEAN)
     add_definitions(-DVC_EXTRALEAN)
 
+    configure_file(${PROJECT_SOURCE_DIR}/realsense2/win-x64/realsense2.dll ${PROJECT_BINARY_DIR}/Release/realsense2.dll COPYONLY)
+
     target_compile_options(${PROJECT_NAME} PRIVATE /O2)
 
     target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/realsense2/win-x64/realsense2.lib)
@@ -56,6 +58,8 @@ if (MSVC)
         target_link_libraries(${PROJECT_NAME} PRIVATE $ENV{LIBCXX_DIR}/lib/Release/c++.lib)
     endif()
 elseif(UNIX)
+    configure_file(${PROJECT_SOURCE_DIR}/realsense2/linux/librealsense2.so.2.51 ${PROJECT_BINARY_DIR}/Release/librealsense2.so.2.51 COPYONLY)
+
     target_link_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/realsense2/linux)
     target_link_libraries(${PROJECT_NAME} PRIVATE librealsense2.so.2.51)
 
