@@ -1,6 +1,6 @@
 {
   "name": "@ezthera/node-librealsense",
-  "version": "0.2130.1",
+  "version": "0.2130.2",
   "description": "Node.js API for Intel® RealSense™ SDK 2.0",
   "main": "index.js",
   "directories": {
@@ -20,8 +20,7 @@
   "scripts": {
     "test": "mocha",
     "doc": "node scripts/generate-doc.js",
-    "install": "node-gyp rebuild",
-    "postinstall": "node scripts/generate-doc.js"
+    "install": "node-gyp rebuild"
   },
   "author": "Kenny Yuan <kaining.yuan@intel.com>",
   "license": "Apache-2.0",
