@@ -1,6 +1,6 @@
 {
   "name": "@ezthera/node-librealsense",
-  "version": "0.2130.0",
+  "version": "0.2130.1",
   "description": "Node.js API for Intel® RealSense™ SDK 2.0",
   "main": "index.js",
   "directories": {
@@ -29,12 +29,13 @@
     "bindings": "^1.2.1",
     "fs-compare": "0.0.4",
     "jsonfile": "^3.0.1",
-    "nan": "^2.16.0",
+    "nan": "^2.17.0",
     "pngjs": "^3.3.0"
   },
   "devDependencies": {
     "jsdoc": "^3.6.6",
-    "marked": "~0.3.9"
+    "marked": "~0.3.9",
+    "taffydb": "2.7.3"
   },
   "types": "./index.d.ts",
   "gypfile": true,
